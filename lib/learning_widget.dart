@@ -102,7 +102,6 @@ class MyRow extends StatelessWidget {
       children: <Widget>[
         Expanded(
             child: RaisedButton(
-
           onPressed: () {},
           color: Colors.redAccent,
           child: Text('red button'),
@@ -126,6 +125,107 @@ class MyRow extends StatelessWidget {
           child: Text('yellow button'),
         )),
       ],
+    );
+  }
+}
+
+class MyColumn extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Expanded(
+          child: Container(
+//          height: 200,
+            width: 200,
+            color: Colors.black,
+          ),
+          flex: 2,
+        ),
+        Expanded(
+          child: Container(
+//          height: 200,
+            width: 200,
+            color: Colors.pink,
+          ),
+          flex: 1,
+        ),
+        Expanded(
+          child: Container(
+//          height: 200,
+            width: 200,
+            color: Colors.blue,
+          ),
+          flex: 1,
+        ),
+        Expanded(
+          child: Container(
+//          height: 200,
+            width: 200,
+            color: Colors.purple,
+          ),
+          flex: 1,
+        ),
+        Expanded(
+          child: Container(
+//          height: 200,
+            width: 200,
+            color: Colors.green,
+          ),
+          flex: 1,
+        ),
+      ],
+    );
+  }
+}
+
+class MyStack extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      alignment: const FractionalOffset(0.5, 0.8),
+      children: <Widget>[
+        CircleAvatar(
+            backgroundColor: Colors.pinkAccent,
+            radius: 300.0,
+            child: Image.network(
+              "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1564196648&di=196bd2d6eb5eef3f497abb862d3e278d&src=http://img3.duitang.com/uploads/item/201412/28/20141228172725_LMRyx.jpeg",
+              fit: BoxFit.contain,
+              colorBlendMode: BlendMode.lighten,
+              color: Colors.pinkAccent,
+              height: 200,
+              width: 200,
+
+            )),
+        Container(
+//          height: 100.0,
+//          width: 200.0,
+          decoration: BoxDecoration(color: Colors.lightBlue),
+          child: Text('hello flutter'),
+        )
+      ],
+    );
+  }
+}
+
+class MyCard extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Column(
+        children: <Widget>[
+          ListTile(leading: Icon(Icons.phone),title: Text("item 1"),subtitle: Text("subtitle 1"),),
+          Divider(),
+          ListTile(leading: Icon(Icons.phone),title: Text("item 2"),subtitle: Text("subtitle 2"),),
+          Divider(),
+          ListTile(leading: Icon(Icons.phone),title: Text("item 3"),subtitle: Text("subtitle 3"),),
+          Divider(),
+          ListTile(leading: Icon(Icons.phone),title: Text("item 4"),subtitle: Text("subtitle 4"),),
+          Divider(),
+        ],
+      ),
     );
   }
 }

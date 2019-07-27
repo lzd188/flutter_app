@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'learing_widget.dart';
+import 'learning_widget.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +13,12 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('appbar'),
         ),
-        body: MyRow(),
+        body: Container(
+//          height: 500,
+//          width: 400,
+//          alignment: Alignment.center,
+          child: MyCard(),
+        ),
       ),
     );
   }
