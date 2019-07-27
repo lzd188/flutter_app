@@ -3,5 +3,5 @@
 
 ## 效果
 
-![1564218695524](C:\Users\Rain\AppData\Roaming\Typora\typora-user-images\1564218695524.png)
+![1564218695524](1564218695524.png)
 
