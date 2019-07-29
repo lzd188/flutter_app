@@ -49,8 +49,8 @@ class _MyExpansionPanelListState extends State<MyExpansionPanelList> {
   @override
   void initState() {
     super.initState();
-    indexList=List();
-    expansionList=List();
+    indexList = List();
+    expansionList = List();
     for (int i = 0; i < 10; i++) {
       indexList.add(i);
       expansionList.add(ExpansionBean(i, false));

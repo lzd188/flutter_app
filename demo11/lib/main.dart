@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
-import 'splash_screen.dart';
+import 'draggable_widget_demo.dart';
 
-void main()=>runApp(MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Flutter demo",
-      home: SplashScreen(),
+      theme: ThemeData.light(),
+      home: Scaffold(
+        body: DraggableContainerDemo(),
+      )
     );
   }
 }
-
-
